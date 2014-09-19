@@ -97,7 +97,7 @@ color: #FFFFFF;
 }
 #header .headline p{
 	margin: 0;
-	font-size: 18px;
+	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
 }
@@ -125,7 +125,7 @@ color: #FFFFFF;
 	/* background-size: contain; */
 }
 
-#testimonial .wrapper .screen{
+#documentation .wrapper .screen{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -157,11 +157,11 @@ color: #FFFFFF;
 	border-top-right-radius: 5px;
 }
 
-#testimonial .wrapper {
+#documentation .wrapper {
     height: 500px;
 }
 
- #testimonial .hover{
+ #documentation .hover{
 	opacity: 0;
 	height: 100%;
 	margin: 0;
@@ -186,12 +186,12 @@ color: #FFFFFF;
 }
 
 
-#header .screen .hover:hover, .wrapper .screen .hover:hover,  #testimonial .hover:hover{
+#header .screen .hover:hover, .wrapper .screen .hover:hover,  #documentation .hover:hover{
 	opacity: 1;
 	padding: 0px 0 0;
 }
 
-#testimonial .hover:hover{
+#documentation .hover:hover{
 	opacity: 1;
 	padding: 350px 0 0;
 }
@@ -233,7 +233,7 @@ color: #FFFFFF;
 	background-size: cover;
 }
 
-#testimonial .hover a{
+#documentation .hover a{
 	position: relative;
 	margin: 0 auto;
 	display: block;
@@ -256,12 +256,12 @@ color: #FFFFFF;
 	bottom: 0px;
 	/* transform: translate(0,200px); */
 }
-#testimonial .hover a:hover{
+#documentation .hover a:hover{
 	-moz-box-shadow:    0px 2px 14px 0px #414141;
 	-webkit-box-shadow: 0px 2px 14px 0px #414141;
 	box-shadow:         0px 2px 14px 0px #414141;
 }
-#testimonial .hover a span{
+#documentation .hover a span{
 	position: absolute;
 	top: 18px;
 	left: 18px;
@@ -279,6 +279,15 @@ color: #FFFFFF;
 	z-index: 10;
 	overflow: hidden;
 }
+
+.features.first {
+	padding: 120px 0 0 0;
+}
+
+.features.second {
+	padding: 0 0 120px 0;
+}
+
 .features .column_3{
 	padding: 20px;
 	float: left;
@@ -298,7 +307,7 @@ color: #FFFFFF;
 	line-height: 22px;
 }
 
-#testimonial{
+#documentation{
 	padding: 80px 0;
 	text-align: center;
  	height: 500px;
@@ -306,7 +315,7 @@ color: #FFFFFF;
 	overflow: hidden;
 	position: relative;
 }
-#testimonial h3{
+#documentation h3{
 	font-size: 38px;
 	color: #fff;
 	margin: 0 0 75px 0;
@@ -317,7 +326,7 @@ color: #FFFFFF;
     
 	line-height: 60px;
 }
-#testimonial img{
+#documentation img{
 	margin: auto;
 	/* max-width: 960px; */
 	width: 90%;
@@ -326,15 +335,15 @@ color: #FFFFFF;
 	position: relative;
 	/* height: 382px; */
 }
-#testimonial .username{
+#documentation .username{
 	font-size: 18px;
 	margin: 0 0 10px 0;
 	font-weight: 600;
 }
-#testimonial .username span{
+#documentation .username span{
 	color: #74C0C8;
 }
-#testimonial .message{
+#documentation .message{
 	max-width: 500px;
 	margin: 0 auto;
 	line-height: 22px;
@@ -356,7 +365,7 @@ color: #FFFFFF;
     font-size: 38px;
     font-family: Lato-Light;
 }
-#getstarted a{
+#getstarted a, #documentation a{
 	position: relative;
 	margin: 0 auto;
 	display: block;
@@ -375,12 +384,12 @@ color: #FFFFFF;
 	     -o-transition: all .25s ease;
 	        transition: all .25s ease;
 }
-#getstarted a:hover{
+#getstarted a:hover, #documentation a:hover{
 	-moz-box-shadow:    0px 2px 14px 0px #641512;
 	-webkit-box-shadow: 0px 2px 14px 0px #641512;
 	box-shadow:         0px 2px 14px 0px #641512;
 }
-#getstarted a span{
+#getstarted a span, #documentation a span{
 	position: absolute;
 	top: 18px;
 	left: 18px;
@@ -393,6 +402,11 @@ color: #FFFFFF;
 #getstarted .wrapper a{
     margin: 30px auto 0;
 }
+
+#documentation .wrapper a{
+    margin: 170px auto 0;
+}
+
 
 #footer{
 	color: #fff;
