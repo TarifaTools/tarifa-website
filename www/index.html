@@ -1,152 +1,131 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>tarifa - your friendly mobile app toolchain on top of cordova</title>
+        <title>tarifa - your friendly mobile app toolchain based on cordova</title>
         <meta charset=utf-8 />
         <link rel="icon" href="images/favicon.ico" />
-
         <meta name = "viewport" content = "width = device-width, height=device-height, initial-scale = 1, user-scalable = no, minimal-ui">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" media="(device-height: 568px)">
-
         <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
     </head>
     <body>
-
         <section id="header">
-        <header>
-        <div class="wrapper">
-            <div class="logo">
-                <a href="./index.html">tarifa<span>v 0.2.0 (alpha)</span></a>
-            </div>
-            <div class="signin"><a href="http://github.com/peutetre/tarifa">Fork on github</a></div>
-        </div>
-        </header>
+            <header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="./index.html">tarifa<span>v 0.2.0 (alpha)</span></a>
+                    </div>
+                    <div class="signin"><a href="http://github.com/peutetre/tarifa">Fork on github</a></div>
+                </div>
+            </header>
 
-        <div class="headline">
-            <div class="wrapper">
-                <h2>Your friendly mobile app toolchain</h2>
-                <p>based on cordova</p>
-                <a class="button" href="http://npmjs.org/package/tarifa"><span></span>npm install -g tarifa</a>
+            <div class="headline">
+                <div class="wrapper">
+                    <h2>Your friendly mobile app toolchain</h2>
+                    <p>based on cordova</p>
+                    <a class="button" href="http://npmjs.org/package/tarifa"><span></span>npm install -g tarifa</a>
+                </div>
             </div>
-        </div>
 
-        <div class="screen">
-            <div id="window">
-                <div id="toolbar">
-                    <div class="top">
-                        <div id="lights">
-                            <div class="light red">
-                                <div class="glyph"></div>
-                                <div class="shine"></div>
-                                <div class="glow"></div>
+            <div class="screen">
+                <div class="terminal">
+                    <div class="toolbar">
+                        <div class="top">
+                            <div class="lights">
+                                <div class="light red"></div>
+                                <div class="light yellow"></div>
+                                <div class="light green"></div>
                             </div>
-                            <div class="light yellow">
-                                <div class="glyph"></div>
-                                <div class="shine"></div>
-                                <div class="glow"></div>
-                            </div>
-                            <div class="light green">
-                                <div class="glyph"></div>
-                                <div class="shine"></div>
-                                <div class="glow"></div>
-                            </div>
-                        </div>
-                        <div id="bubble">
-                            <div class="shine"></div>
-                            <div class="glow"></div>
                         </div>
                     </div>
+                    <div class="body">
+                        <p> <span class="red">∞</span> tarifa run ios stage --verbose <br>
+                            <span class="green">✔︎</span> start to build the www project <br>
+                            <span class="green">✔︎</span> prepare, launch www project build <br>
+                            <span class="green">✔︎</span> www project build done with configuration stage <br>
+                            <span class="green">✔︎</span> prepare, rm cordova www folder <br>
+                            <span class="green">✔︎</span> prepare, link www project to cordova www <br>
+                            <span class="green">✔︎</span> populated config.xml <br>
+                            <span class="green">✔︎</span> copied icons for platform ios <br>
+                            <span class="green">✔︎</span> copied splash screens for platform ios <br>
+                            <span class="green">✔︎</span> start cordova prepare <br>
+                            <span class="green">✔︎</span> product name set to demo stage<br></p>	
+                        <div class="cursor"></div>
+                    </div>
                 </div>
-                <div id="body">
-                    <p> <span class="red">∞</span> tarifa run ios stage --verbose <br>
-                        <span class="green">✔︎</span> start to build the www project <br>
-                        <span class="green">✔︎</span> prepare, launch www project build <br>
-                        <span class="green">✔︎</span> www project build done with configuration stage <br>
-                        <span class="green">✔︎</span> prepare, rm cordova www folder <br>
-                        <span class="green">✔︎</span> prepare, link www project to cordova www <br>
-                        <span class="green">✔︎</span> populated config.xml <br>
-                        <span class="green">✔︎</span> copied icons for platform ios <br>
-                        <span class="green">✔︎</span> copied splash screens for platform ios <br>
-                        <span class="green">✔︎</span> start cordova prepare <br>
-                        <span class="green">✔︎</span> product name set to demo stage<br></p>	
-                    <div class="cursor"></div>	
-                </div>	
             </div>
-        </div>
         </section>
 
         <section class="features first">
-        <div class="wrapper">
-            <div class="column_3">
-                <img src="images/grind.png" />
-                <h4>Build multiple apps</h4>
-                <p>Simple produce multiple unique apps on a given platform within a single project.</p>
-            </div>
+            <div class="wrapper">
+                <div class="column_3">
+                    <img src="images/grind.png" />
+                    <h4>Build multiple apps</h4>
+                    <p>Simple produce multiple unique apps on a given platform within a single project.</p>
+                </div>
 
-            <div class="column_3">
-                <img src="images/stack.png" />
-                <h4>Integrate your front-end build system</h4>
-                <p>Integrate the front-end build tool you like and tarifa will trigger it.</p>
-            </div>
+                <div class="column_3">
+                    <img src="images/stack.png" />
+                    <h4>Integrate your front-end build system</h4>
+                    <p>Integrate the front-end build tool you like and tarifa will trigger it.</p>
+                </div>
 
-            <div class="column_3">
-                <img src="images/message.png" />
-                <h4>Interactive project bootstrap</h4>
-                <p>No need to remember every required informations while creating a project, tarifa will asks you questions.</p>
+                <div class="column_3">
+                    <img src="images/message.png" />
+                    <h4>Interactive project bootstrap</h4>
+                    <p>No need to remember every required informations while creating a project, tarifa will asks you questions.</p>
+                </div>
             </div>
-        </div>
         </section>
 
         <section class="features second">
-        <div class="wrapper">
-            <div class="column_3">
-                <img src="images/direction.png" />
-                <h4>Deploy to testers from the CLI</h4>
-                <p>No need to launch a browser to upload binaries to hockeyapp.</p>
-            </div>
+            <div class="wrapper">
+                <div class="column_3">
+                    <img src="images/direction.png" />
+                    <h4>Deploy to testers from the CLI</h4>
+                    <p>No need to launch a browser to upload binaries to hockeyapp.</p>
+                </div>
 
-            <div class="column_3">
-                <img src="images/file.png" />
-                <h4>Manage iOS provisioning files</h4>
-                <p>No need to use the provisioning portal each time you add a new device to a provisioning file.</p>
-            </div>
+                <div class="column_3">
+                    <img src="images/file.png" />
+                    <h4>Manage iOS provisioning files</h4>
+                    <p>No need to use the provisioning portal each time you add a new device to a provisioning file.</p>
+                </div>
 
-            <div class="column_3">
-                <img src="images/device.png" />
-                <h4>Available platforms</h4>
-                <p>tarifa supports a subset of cordova platfoms: web, ios, androidn, windows phone 8 and windows 8.</p>
+                <div class="column_3">
+                    <img src="images/device.png" />
+                    <h4>Available platforms</h4>
+                    <p>tarifa supports a subset of cordova platfoms: web, ios, androidn, windows phone 8 and windows 8.</p>
+                </div>
             </div>
-        </div>
         </section>
 
         <section id="documentation">
-        <div class="wrapper">
-            <h3>Documentation</h3>
-            <div class="screen">
-                <a href="https://www.gitbook.io/book/42loops/tarifa"><span></span>read tarifa-book</a>
+            <div class="wrapper">
+                <h3>Documentation</h3>
+                <div class="screen">
+                    <a href="https://www.gitbook.io/book/42loops/tarifa"><span></span>read tarifa-book</a>
+                </div>
             </div>
-        </div>
         </section>
 
         <section id="getstarted">
-        <div class="wrapper">
-            <h3>Clone & Contribute</h3>
-            <a href="http://github.com/peutetre/tarifa"><span></span>tarifa on github</a>
-            <a href="http://github.com/peutetre/tarifa-book"><span></span>tarifa-book on github</a>
-        </div>
+            <div class="wrapper">
+                <h3>Clone & Contribute</h3>
+                <a href="http://github.com/peutetre/tarifa"><span></span>tarifa on github</a>
+                <a href="http://github.com/peutetre/tarifa-book"><span></span>tarifa-book on github</a>
+            </div>
         </section>
 
         <section id="footer">
-        <div class="wrapper">
-            <p>Sponsors: <a href="http://zengularity.com">Zengularity</a></p>
-            <p>Follow us on <a href="http://twitter.com/@tarifa_cli">@tarifa_cli</a> for the latest news!</p>
-            <p>By <a href="http://twitter.com/@42loops">@42loops</a>, <a href="http://twitter.com/@veloce">@vveloce</a> and <a href="http://twitter.com/@bapmrl">@bapmrl</a></p>
-        </div>
+            <div class="wrapper">
+                <p>Sponsors: <a href="http://zengularity.com">Zengularity</a></p>
+                <p>Follow us on <a href="http://twitter.com/@tarifa_cli">@tarifa_cli</a> for the latest news!</p>
+                <p>By <a href="http://twitter.com/@42loops">@42loops</a>, <a href="http://twitter.com/@veloce">@vveloce</a> and <a href="http://twitter.com/@bapmrl">@bapmrl</a></p>
+            </div>
         </section>
-
     </body>
 </html>
