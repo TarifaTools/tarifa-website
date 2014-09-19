@@ -99,7 +99,7 @@ a {
     text-align: center;
     font-size: 38px;
     margin: 120px 0 20px 0;
-    font-family: Lato-Light;
+    font-family: Lato;
 
     font-size: 55px;
     color: #FFFFFF;
@@ -317,7 +317,7 @@ a {
 #documentation h3{
     color: #fff;
     margin: 0 0 75px 0;
-    font-family: Lato-Light;
+    font-family: Lato;
     font-size: 55px;
     color: #FFFFFF;
     line-height: 60px;
@@ -363,7 +363,7 @@ a {
     color: #fff;
     margin: 0 0 75px 0;
     font-size: 38px;
-    font-family: Lato-Light;
+    font-family: Lato;
 }
 
 #getstarted a, #documentation a{
