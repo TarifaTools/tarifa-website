@@ -1,5 +1,5 @@
 body{
-	background:#FAFAF7;
+	background: rgb(255, 255, 255);
 	color:#A3A19C;
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
@@ -23,6 +23,7 @@ html, body{
 	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
+	height: 100%;
 }
 #header{
 	position: relative;
@@ -61,11 +62,12 @@ html, body{
 #header header .logo a span{
 	position:absolute;
 	top: 34px;
-	right: -85px;
+	right: -67px;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Lato';
 	font-size: 14px;
+	line-height: 42px;
 }
 
 #header header .signin{
@@ -86,7 +88,7 @@ html, body{
 	color: #fff;
 	text-align: center;
 	font-size: 38px;
-	margin: 150px 0 20px 0;
+	margin: 120px 0 20px 0;
     font-family: Lato-Light;
 
 	font-size: 55px;
@@ -139,11 +141,11 @@ color: #FFFFFF;
 
 
 #header .screen .hover, .hover{
-	opacity: 0;
+	opacity: 1;
 	max-width: 961px;
 	height: 382px;
 	margin: 0 auto;
-	background: rgba(0,0,0,0.54);
+	/* background: rgba(247, 247, 247, 0.54); */
 	-webkit-transition: all .25s ease;
 	   -moz-transition: all .25s ease;
 	    -ms-transition: all .25s ease;
@@ -196,7 +198,7 @@ color: #FFFFFF;
 	padding: 350px 0 0;
 }
 
-#header .screen .hover a{
+#header a.button {
 	position: relative;
 	margin: 0 auto;
 	display: block;
@@ -216,14 +218,14 @@ color: #FFFFFF;
 	     -o-transition: all .25s ease;
 	        transition: all .25s ease;
 	position: relative;
-	top: 100px;
+	top: 69px;
 }
-#header .screen .hover a:hover{
+#header a.button:hover{
 	-moz-box-shadow:    0px 2px 14px 0px #414141;
 	-webkit-box-shadow: 0px 2px 14px 0px #414141;
 	box-shadow:         0px 2px 14px 0px #414141;
 }
-#header .screen .hover a span{
+#header a.button  span{
 	position: absolute;
 	top: 18px;
 	left: 18px;
@@ -316,7 +318,7 @@ color: #FFFFFF;
 	position: relative;
 }
 #documentation h3{
-	font-size: 38px;
+	
 	color: #fff;
 	margin: 0 0 75px 0;
     font-family: Lato-Light;
@@ -412,7 +414,8 @@ color: #FFFFFF;
 	color: #fff;
 	height: 100px;
 	background: #1F4056;
-    padding: 0 10px;
+    
+	padding: 0 20px;
 }
 #footer p{
 	width: 33.33%;
@@ -790,6 +793,11 @@ color: #FFFFFF;
 }
 #body p { 
    color: #1D1D1D!important; 
+   white-space: nowrap;
+      width: 100%;                   
+      overflow: hidden;              /* "overflow" value must be different from "visible" */ 
+
+      text-overflow:    ellipsis;
 }
 
 @keyframes blink
@@ -895,4 +903,76 @@ color: #FFFFFF;
 #body .green {
     color:green;
     background:none;
+}
+
+@media (max-width: 768px){
+    #header {
+
+    }
+
+    #header .headline p {
+        margin: 50px 0 20px 0;
+    }
+
+    .features {
+        overflow: none;
+        height: initial;
+        padding: 0;
+    }
+    .features.first, .features.second {
+        overflow: inherit;
+    
+        padding: 0;
+    
+        margin: 20px;
+}
+
+    .features.first {
+        margin: 30px 20px 20px 20px;
+    }
+
+    .features .column_3 {
+        float:none;
+        margin: auto;
+        /* width: 100%; */
+        margin: 20px 20px 30px 20px;
+        padding: 0;
+        width: inherit;
+}
+
+#documentation h3 {
+    font-size: 38px;
+}
+
+#documentation .wrapper .screen {
+    background:none;
+}
+#documentation .wrapper .screen a{
+    margin: 50px auto 0;
+}
+
+#footer {
+    height: 120px;
+}
+
+#footer p {
+    width: 100%;
+    float:none;
+    margin: 0;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+#footer p:nth-child(3) {
+text-align:center;
+}
+
+#header .headline p, #header .headline h2 {
+    margin: 30px 0 20px 0;
+}
+
+#header a.button {
+    top: 10px;
+}
+
 }
