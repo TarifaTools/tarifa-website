@@ -71,7 +71,7 @@ a {
 #header header .logo a span{
     position:absolute;
     top: 34px;
-    right: -67px;
+    right: -30px;
     color: #fff;
     text-decoration: none;
     font-family: 'Lato';
@@ -79,17 +79,17 @@ a {
     line-height: 42px;
 }
 
-#header header .signin{
+#header header .fork{
     margin: 18px 10px 0;
     float: right;
 }
 
-#header header .signin a{
+#header header .fork a{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-#header header .signin a:hover{
+#header header .fork a:hover{
     text-decoration: underline;
 }
 
@@ -101,7 +101,7 @@ a {
     margin: 120px 0 20px 0;
     font-family: Lato;
 
-    font-size: 55px;
+    font-size: 40px;
     color: #FFFFFF;
 
     line-height: 60px;

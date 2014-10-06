@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>tarifa - your friendly mobile app toolchain based on cordova</title>
+        <title>tarifa - your friendly toolchain for mobile app development based on Cordova</title>
         <meta charset=utf-8 />
         <link rel="icon" href="images/favicon.ico" />
-        <meta name = "viewport" content = "width = device-width, height=device-height, initial-scale = 1, user-scalable = no, minimal-ui">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, minimal-ui">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" media="(device-height: 568px)">
         <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
@@ -16,21 +16,22 @@
             <header>
                 <div class="wrapper">
                     <div class="logo">
-                        <a href="./index.html">tarifa<span>v 0.2.0 (alpha)</span></a>
+                        <a href="./index.html">tarifa<span>v 0.2.0</span></a>
                     </div>
-                    <div class="signin"><a href="http://github.com/peutetre/tarifa">Fork on github</a></div>
+                    <div class="fork"><a href="http://github.com/TarifaMobileApps/tarifa">Fork on github</a></div>
                 </div>
             </header>
 
             <div class="headline">
                 <div class="wrapper">
-                    <h2>Your friendly mobile app toolchain</h2>
-                    <p>based on cordova</p>
+                    <h2>Your friendly toolchain for mobile app development</h2>
+                    <p>based on Cordova</p>
                     <a class="button" href="http://npmjs.org/package/tarifa"><span></span>npm install -g tarifa</a>
                 </div>
             </div>
 
             <div class="screen">
+                <!-- adapted from Dom Briggs's css terminal: http://cssdeck.com/labs/pure-css-osx-terminal -->
                 <div class="terminal">
                     <div class="toolbar">
                         <div class="top">
@@ -48,7 +49,7 @@
                             <span class="green">✔︎</span> www project build done with configuration stage <br>
                             <span class="green">✔︎</span> prepare, rm cordova www folder <br>
                             <span class="green">✔︎</span> prepare, link www project to cordova www <br>
-                            <span class="green">✔︎</span> populated config.xml <br>
+                            <span class="green">✔︎</span> modifying config.xml <br>
                             <span class="green">✔︎</span> copied icons for platform ios <br>
                             <span class="green">✔︎</span> copied splash screens for platform ios <br>
                             <span class="green">✔︎</span> start cordova prepare <br>
@@ -64,19 +65,19 @@
                 <div class="column_3">
                     <img src="images/grind.png" />
                     <h4>Build multiple apps</h4>
-                    <p>Simple produce multiple unique apps on a given platform within a single project.</p>
+                    <p>Produce multiple unique apps easily on a given platform within a single project.</p>
                 </div>
 
                 <div class="column_3">
                     <img src="images/stack.png" />
                     <h4>Integrate your front-end build system</h4>
-                    <p>Integrate the front-end build tool you like and tarifa will trigger it.</p>
+                    <p>Integrate the front-end build tool you use and tarifa will trigger it.</p>
                 </div>
 
                 <div class="column_3">
                     <img src="images/message.png" />
                     <h4>Interactive project bootstrap</h4>
-                    <p>No need to remember every required informations while creating a project, tarifa will asks you questions.</p>
+                    <p>No need to remember every required information while creating a project, tarifa will guide you with adequate questions and memorize the answers in the project files.</p>
                 </div>
             </div>
         </section>
@@ -98,7 +99,7 @@
                 <div class="column_3">
                     <img src="images/device.png" />
                     <h4>Available platforms</h4>
-                    <p>tarifa supports a subset of cordova platfoms: web, ios, androidn, windows phone 8 and windows 8.</p>
+                    <p>tarifa supports a subset of cordova platfoms: web, ios, android, windows phone 8.</p>
                 </div>
             </div>
         </section>
@@ -115,8 +116,8 @@
         <section id="getstarted">
             <div class="wrapper">
                 <h3>Clone & Contribute</h3>
-                <a href="http://github.com/peutetre/tarifa"><span></span>tarifa on github</a>
-                <a href="http://github.com/peutetre/tarifa-book"><span></span>tarifa-book on github</a>
+                <a href="http://github.com/TarifaMobileApps/tarifa"><span></span>tarifa on github</a>
+                <a href="http://github.com/TarifaMobileApps/tarifa-book"><span></span>tarifa-book on github</a>
             </div>
         </section>
 
@@ -127,5 +128,17 @@
                 <p>By <a href="http://twitter.com/@42loops">@42loops</a>, <a href="http://twitter.com/@vveloce">@vveloce</a> and <a href="http://twitter.com/@bapmrl">@bapmrl</a></p>
             </div>
         </section>
+        <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-35740178-1']);
+            _gaq.push(['_setDomainName', 'tarifa.tools']);
+            _gaq.push(['_trackPageview']);
+            } catch(err) {}
+        </script>
     </body>
 </html>
