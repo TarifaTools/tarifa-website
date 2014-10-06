@@ -4,11 +4,9 @@
   "description": "tarifa web site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TarifaMobileApps/tarifa-website.git"
+    "url": "https://github.com/TarifaTools/tarifa-website.git"
   },
   "author": "Paul Panserrieu <paul@42loops.com>",
   "license": "Apache version 2.0",
-  "bugs": {
-    "url": "https://github.com/TarifaMobileApps/tarifa-website/issues"
-  }
+  "bugs": "https://github.com/TarifaTools/tarifa-website/issues"
 }
