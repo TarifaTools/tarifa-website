@@ -104,7 +104,6 @@ a {
 #header .headline h2{
     color: #fff;
     text-align: center;
-    font-size: 38px;
     margin: 120px 0 20px 0;
     font-family: Lato;
 
@@ -761,5 +760,10 @@ a {
 
     #header a.button {
         top: 10px;
+        width: 280px;
+    }
+
+    a.button, #documentation a, #getstarted a {
+        width: 280px;
     }
 }
