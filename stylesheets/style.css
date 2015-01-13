@@ -391,6 +391,7 @@ a {
     -ms-transition: all .25s ease;
     -o-transition: all .25s ease;
     transition: all .25s ease;
+    padding-left: 10px;
 }
 
 #getstarted a:hover, #documentation a:hover{
@@ -411,6 +412,7 @@ a {
 
 #getstarted .wrapper a{
     margin: 30px auto 0;
+    padding-left: 10px;
 }
 
 #documentation .wrapper a{
