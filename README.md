@@ -1,7 +1,13 @@
 tarifa-website
 ==============
 
-This is this tarifa website: [http://tarifa.tools](http://tarifa.tools)
+This is tarifa website: [http://tarifa.tools](http://tarifa.tools)
+
+run
+
+```
+bundle exec jekyll serve
+```
 
 ## License
 
