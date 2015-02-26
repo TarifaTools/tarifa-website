@@ -1,5 +1,5 @@
 body{
-    background: rgb(255, 255, 255);
+    background: #1F4056;
     color:#A3A19C;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -34,7 +34,7 @@ a {
     height: 100%;
 }
 
-#header{
+#header {
     position: relative;
     height: 810px;
     background: #487EC2;
@@ -45,27 +45,35 @@ a {
     overflow: hidden;
 }
 
-#header header{
+#header.small{
+    height: 350px;
+}
+
+header.site-header{
+    position:absolute;
+    top:0;
     padding: 10px 0 0;
     background: transparent;
     height: 80px;
+    z-index:10;
+    width:100%;
 }
 
-#header header .logo{
+header.site-header .logo{
     margin: 0;
     float: left;
     color: white;
     margin: 0 0 0 10px;
 }
 
-#header header .logo img{
+header.site-header .logo img{
     height: 40px;
     width: 40px;
     position: relative;
     top: 10px;
 }
 
-#header header .logo a{
+header.site-header .logo a{
     color: #fff;
     text-decoration: none;
     position:relative;
@@ -75,7 +83,7 @@ a {
     font-weight: bold;
 }
 
-#header header .logo a span{
+header.site-header .logo a span{
     position:absolute;
     top: 34px;
     right: -30px;
@@ -86,34 +94,33 @@ a {
     line-height: 42px;
 }
 
-#header header .fork{
+header.site-header .fork{
     margin: 18px 10px 0;
     float: right;
 }
 
-#header header .fork a{
+header.site-header .fork a{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-#header header .fork a:hover{
+
+header.site-header .fork a:hover{
     text-decoration: underline;
 }
 
 #header .headline p,
-#header .headline h2{
+#header .headline h1{
     color: #fff;
     text-align: center;
     margin: 120px 0 20px 0;
     font-family: Lato;
-
     font-size: 40px;
     color: #FFFFFF;
-
     line-height: 60px;
 }
 
-#header .headline p{
+#header .headline h1 span{
     margin: 0;
     font-size: 24px;
     line-height: 30px;
@@ -216,7 +223,7 @@ a {
     -o-transition: all .25s ease;
     transition: all .25s ease;
     position: relative;
-    top: 69px;
+    top: 100px;
     z-index: 2;
 }
 
@@ -704,7 +711,92 @@ a {
     background:none;
 }
 
-@media (max-width: 768px){
+.list-posts .wrapper {
+    height:500px;
+}
+
+#blog{
+    background:white;
+}
+
+#blog h3{
+    color: #514A9D;
+    margin: 0 0 60px 0;
+    font-family: Lato;
+    font-size: 55px;
+    line-height: 60px;
+    text-align:center;
+    padding: 80px 0 0 0;
+}
+
+#blog a{
+    text-decoration: none;
+    color: #1F4056;
+}
+
+#blog h4{
+    font-size: 20px;
+    margin: 0px 0 0 40px;
+}
+
+#blog span.star {
+    color: #514A9D;
+}
+
+#blog a:hover{
+    text-decoration: underline;
+}
+
+#blog .post-meta {
+    font-size:20px;
+}
+
+#blog a.all-post-link {
+    font-size:18px;
+}
+
+#blog ul{
+    margin: 40px auto;
+    line-height:40px;
+    padding: 0 40px;
+    max-width:700px;
+}
+
+#blog li{
+    margin: 0 0 10px 0;
+    line-height:40px
+}
+
+.blogitem {
+    padding:20px;
+    background:white;
+    font-size:18px;
+    line-height:32px;
+}
+
+.blogitem a{
+    text-decoration: none;
+    color: #3B87BC;
+}
+
+.blogitem a:hover{
+    text-decoration: underline;
+}
+.blogitem .post-meta {
+    font-weight:bold;
+    margin: 20px 0 20px 0;
+}
+
+.blogitem .post-content {
+    margin: 10px 0 30px 0;
+}
+
+.blogitem pre {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
     #header .headline p {
         margin: 50px 0 20px 0;
     }
@@ -716,17 +808,25 @@ a {
     .features.first, .features.second {
         overflow: inherit;
         padding: 0;
-        margin: 20px;
+        margin: 0;
     }
-    .features.first {
-        margin: 30px 20px 20px 20px;
+    .features.first  {
+        padding: 30px 30px 0px 20px;
+    }
+
+    .features.second {
+        padding: 0px 30px 20px 20px;
     }
     .features .column_3 {
         float:none;
         margin: auto;
-        margin: 20px 20px 30px 20px;
+        margin: 20px 0px 30px 20px;
         padding: 0;
         width: inherit;
+    }
+    .features .column_3:first-child{
+        margin: 0px 0px 30px 20px;
+        padding: 20px 0 0 0;
     }
 
     #documentation h3 {
@@ -756,12 +856,16 @@ a {
         text-align:center;
     }
 
-    #header .headline p, #header .headline h2 {
-        margin: 30px 0 20px 0;
+    #header .headline p {
+        margin: 40px 0 20px 0;
+    }
+
+    #header .headline h2, #header .headline h1 {
+        margin: 90px 0 20px 0;
     }
 
     #header a.button {
-        top: 10px;
+        top: 60px;
         width: 280px;
     }
 
