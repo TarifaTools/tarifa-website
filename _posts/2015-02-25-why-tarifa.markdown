@@ -8,7 +8,7 @@ author_twitter: 42loops
 categories: introduction
 ---
 
-Apache Cordova is doing a great job allowing web developers to publish mobile apps on stores, however working on various projects I realized I needed to bundle Cordova with extra features to achieve the following goals.
+[Apache Cordova](http://cordova.apache.org/) is doing a great job allowing web developers to publish mobile apps on stores, however working on various projects I realized I needed to bundle Cordova with extra features to achieve the following goals.
 
 ## Work smoothly with a remote team
 
@@ -60,4 +60,4 @@ the same platform.
 
 ## Local downstream distribution of Cordova
 
-<span class='tarifa'>tarifa</span> tries to cover all these goals and I hope will helps you to build and maintain more Cordova apps.
+<span class='tarifa'>tarifa</span> tries to cover these goals and I hope will helps you to build and maintain more Cordova apps. You can see <span class='tarifa'>tarifa</span> as a local downstream distribution of Cordova that helps us to improve our workflow.
