@@ -3,6 +3,7 @@ layout: post
 title:  "Why tarifa, why wrapping Apache Cordova into another CLI?"
 date:   2015-02-24 16:56:49
 author: Paul Panserrieu
+gravatar: 65920e23fe9e867755920783db9fe3aa
 author_twitter: 42loops
 categories: introduction
 ---
