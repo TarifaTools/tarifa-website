@@ -7,29 +7,24 @@ author_twitter: 42loops
 categories: introduction
 ---
 
-Apache Cordova is doing a great job allowing web developer to publish mobile apps on stores.
-While working on various projets, I came to the point where I needed to bundle Cordova with
-some extra features to statisfy the following goals.
+Apache Cordova is doing a great job allowing web developers to publish mobile apps on stores, however working on various projects I realized I needed to bundle Cordova with extra features to achieve the following goals.
 
 ## Work smoothly with a remote team
 
-Did you ever explained anyone how to change the signing identity of your project in XCode on a google hangout?
-Yep, graphical user interfaces are difficult to describe. To get rid of unwanted hangout, **all your
+Did you ever had to explain to someone how to change the signing identity of your Xcode project on a Google Hangout?
+Yep, graphical user interfaces are difficult to describe. To get rid of unwanted Hangouts, **your
 workflow needs to be expressed as a command line interface**.
 Copy pasting strings is much more efficient than trying to explain someone where to click.
 
-The Cordova CLI has fast all the features required, only tiny parts are missing to cover
-all the developpement and publication workflow: like been able to define
-multiple app names, to overwrite the `AndroidManifest.xml` `versionCode`, to publish to tester or a better interface to
-the `www` front-end project.
+The Cordova CLI has almost all the features we need to cover our whole development and publication workflow: only tiny parts are missing. In particular we need to be able to define
+multiple app names, to overwrite the `AndroidManifest.xml`'s' `versionCode`, to publish to testers (on [HockeyApp](http://hockeyapp.net/)) and a better interface to the `www` front-end project.
 
-## Lower the entry barrier without hiding complexity
+## Lower the barrier to entry without hiding complexity
 
-It is crusial to be able to bring people on board with less friction as possible: not every web
-developer has already some experiences with Cordova but every developer should be able to easily build and publish
-to tester.
+It is crucial that we can get people up to speed with minimum difficulty: not every web
+developer has already had some experience with Cordova but every developer should be able to easily build apps and publish them to testers.
 
-## Share improvements on all projects
+## Share improvements among all projects
 
 While working on multiple projects with multiple teams, it is just easier to reuse
 the same tool and have projects working the same way to avoid confusion.
