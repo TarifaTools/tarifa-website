@@ -23,14 +23,14 @@ multiple app names, to overwrite the `AndroidManifest.xml`'s' `versionCode`, to 
 ## Lower the barrier to entry without hiding complexity
 
 It is crucial that we can get people up to speed with minimum difficulty: not every web
-developer has already had some experience with Cordova but every developer should be able to easily build apps and publish them to testers.
+developer already has experience with Cordova but every developer should be able to easily build apps and publish them to testers.
 
 ## Share improvements among all projects
 
 When working on multiple projects with multiple teams it is just easier to reuse
 the same tool and have projects working the same way to avoid confusions.
-We don't wan't to do several times the same thing.
-For example, cordova hooks will make you spend time on specializing a single project and that will cost you additional time and effort to extract and spread the improvements to other projects.
+We don't wan't to reinvent the wheel on every project.
+For example, cordova hooks will make you spend time on specializing a single project and that will cost you additional time and effort to extract and share the improvements in other projects.
 
 ## Keep track of Cordova updates
 
@@ -48,7 +48,7 @@ it's just that you need to stay focused to finish the task at hand without makin
 ## Interface to any front-end build system
 
 Cordova is agnostic to any JavaScript Framework and for a good reason: nowadays
-frameworks and build systems are quickly deprecated. With Cordova you must build your front-end project yourself before building the app.
+frameworks and build systems quickly become deprecated. With Cordova you must build your front-end project yourself before building the app.
 The wrapper should provide a minimal interface to any front-end build system so that there's a unique command for building apps.
 
 ## Produce multiple unique apps on the same platform with a single Cordova project
