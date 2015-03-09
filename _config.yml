@@ -2,7 +2,7 @@
 title: tarifa - your friendly toolchain for mobile app development on top of Apache Cordova.
 email: paul@42loops.com
 description: Your friendly toolchain for mobile app development on top of Apache Cordova.
-baseurl: ""
+baseurl: "tarifa-website"
 url: "http://tarifa.tools"
 twitter_username: tarifa_cli
 github_username:  TarifaTools
