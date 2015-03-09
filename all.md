@@ -16,7 +16,7 @@ permalink: /all/
         <h2>All Posts</h2>
             <ul class="post-list">
                 {% for post in site.posts %}
-                <li><span class="post-meta"><span class="star">★ </span>{{ post.date | date: "%b %-d, %Y" }}</span><h4><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4></li>
+                <li><span class="post-meta"><span class="star">★ </span>{{ post.date | date: "%B %-d, %Y" }}</span><h4><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4></li>
                 {% endfor %}
                 <li><a class="all-post-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a></li>
             </ul>
