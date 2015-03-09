@@ -27,37 +27,35 @@ developer has already had some experience with Cordova but every developer shoul
 
 ## Share improvements among all projects
 
-While working on multiple projects with multiple teams, it is just easier to reuse
-the same tool and have projects working the same way to avoid confusion.
-Let's try to not redo multiple time the same things.
-For example, codova hooks will encourage spending times on specializing your project.
-And it will recost time and efforts to extract improvements and spread them into all projects.
+When working on multiple projects with multiple teams it is just easier to reuse
+the same tool and have projects working the same way to avoid confusions.
+We don't wan't to do several times the same thing.
+For example, cordova hooks will make you spend time on specializing a single project and that will cost you additional time and effort to extract and spread the improvements to other projects.
 
-## Keep track of Cordova changes
+## Keep track of Cordova updates
 
-Cordova grows fast and continously has mobile SDKs increase their version number.
-It's hard to keep track of all improvements when fully concentrated on coding a project.
-Wrapping it allows to keep track of changes and improvements but also to test releases before
+Cordova grows fast and continuously as mobile SDKs move forward.
+It's hard to keep track of all the updates when one is fully focused on coding an application.
+Wrapping Cordova help us keep track of changes and improvements but also to test Cordova releases before
 using them.
 
-## Reduce boring tasks that requires attention
+## Automate boring tasks that require attention
 
-Cordova developpement requires to execute a lot of boring tasks that requires your full attention.
-It's like you need to copy a book of 200 pages, the process is simple, you know how to do it,
-it's just that you need to keep concentrate to finish such a task without making errors.
+Cordova development requires one to perform a lot of boring tasks that require full attention.
+It's as if you had to copy a book of 200 pages, the process is simple, you know how to do it,
+it's just that you need to stay focused to finish the task at hand without making any errors.
 
 ## Interface to any front-end build system
 
-Cordova is agnostic to any JavaScript Framework and it's good so. Now a days,
-frameworks and build systems evolves very fast and are changed quickly.
-It should provide a minimal interface to any frontend build system allowing a unic command for building apps.
+Cordova is agnostic to any JavaScript Framework and for a good reason: nowadays
+frameworks and build systems are quickly deprecated. With Cordova you must build your front-end project yourself before building the app.
+The wrapper should provide a minimal interface to any front-end build system so that there's a unique command for building apps.
 
 ## Produce multiple unique apps on the same platform with a single Cordova project
 
-Each cordova app is bounded to an id and a name, modifying one of them results in the change of multiples files
-in the native projet folders. It should beeing able to define multiple id and name combinations to build multiples unic apps for
-the same platform.
+Every Cordova app has an id and a name. To update the id or the name you must edit multiples files
+in the native projet folders. We should be able to define several id and name tuples so that we can build multiple unique apps for the same platform.
 
 ## Local downstream distribution of Cordova
 
-<span class='tarifa'>tarifa</span> tries to cover these goals and I hope will helps you to build and maintain more Cordova apps. You can see <span class='tarifa'>tarifa</span> as a local downstream distribution of Cordova that helps us to improve our workflow.
+<span class='tarifa'>tarifa</span> tries to cover these goals and I hope it will help you build and maintain more Cordova apps. You can see <span class='tarifa'>tarifa</span> as a local downstream distribution of Cordova that helps us improve our workflow.
