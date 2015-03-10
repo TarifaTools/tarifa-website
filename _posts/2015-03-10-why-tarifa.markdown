@@ -12,7 +12,7 @@ categories: introduction
 
 ## Work smoothly with a remote team
 
-Did you ever had to explain to someone how to change the signing identity of your Xcode project on a Google Hangout?
+Have you ever had to explain to someone how to change the signing identity of your Xcode project on a Google Hangout?
 Yep, graphical user interfaces are difficult to describe. To get rid of unwanted Hangouts, **your
 workflow needs to be expressed as a command line interface**.
 Copy pasting strings is much more efficient than trying to explain someone where to click.
